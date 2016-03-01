@@ -5,3 +5,36 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************
+Media Queries
+*********************************************/
+@media all and (max-width: 500px) {
+  .main-nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  .main-nav a {
+    border: 3px solid black;
+    height: 3em;
+    align-self: center;
+  }
+}
